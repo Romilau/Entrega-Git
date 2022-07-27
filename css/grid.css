@@ -1,0 +1,290 @@
+*{
+   
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+}
+
+
+
+.body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+
+
+h1 div{
+    display:flex;
+    text-align: center;
+    color: rgb(167, 145, 111);
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+   justify-content: space-between;
+}
+
+
+
+.logo{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 80%;
+}
+
+
+a{
+    color:rgb(167, 145, 111);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.buscador{
+display: flex;
+flex-direction: row;
+height:  40px;
+justify-content: space-around;
+margin-top: 2%;
+}
+
+.lupa{
+    height: 30px;
+    width:30px;
+    margin: 8px;
+    
+   }
+
+.tienda{
+    color: #c7bba0;
+    display: flex;
+    justify-content: center;
+}
+
+article img{
+    height: 200px;
+    width: 200px;
+}
+
+
+button{
+    
+    /*background-color: rgb(167, 145, 111);*/
+    font-family:Arial, Helvetica, sans-serif;
+   
+    
+}
+
+
+
+.espejos{
+grid-area: espejos;
+
+}
+
+.estanterias{
+grid-area: estanterias;
+}
+
+.escritorios{
+grid-area: escritorios;
+}
+
+.mesas{
+grid-area: mesas;
+}
+.sofas{
+grid-area: sofas;
+}
+
+.sillas{
+grid-area: sillas;
+}
+
+.main img{
+    margin: 20px;
+}
+
+
+.footer{
+    
+    color: #c7bba0;
+   
+}
+
+
+
+
+
+
+.footer a{
+    display: flex;
+    justify-content: center;
+  color: #c7bba0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:600;
+    font-size:large;
+    text-decoration: none;
+}
+
+
+
+ .logoWhatsaap{
+    
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.footerRedes{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer{
+    margin-top: 100px;
+}
+
+
+
+@media screen and (min-width: 320px) {
+    
+    #galeriaFotos{
+        
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas: "estanterias" "escritorios" "mesas" "espejos" "sofas" "sillas";
+        column-gap: 100px;
+        row-gap: 10px;
+    
+    
+        
+   
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50%;
+}
+
+
+
+.escritorios,
+.espejos,
+.estanterias,
+.mesas,
+.sofas,
+.sillas{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(1,fr);
+    justify-items: center;
+    grid-template-areas: "estanterias" "escritorios" "mesas" "espejos" "sofas" "sillas";
+    
+}
+
+#menu{
+    display: none;
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    color:  rgb(167, 145, 111);
+    font-size: smaller;
+}
+
+.menuhamburguesa{
+    display: block;
+    height: 60px;
+    width: 60px;
+    order: -1;
+}
+
+
+
+}
+
+
+    
+
+@media screen and (min-width: 1200px) {
+
+    
+    #galeriaFotos {
+    background-color:rgb(167, 145, 111);
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "estanterias estanterias estanterias" "escritorios escritorios escritorios" "mesas mesas mesas" "espejos espejos espejos" "sofas sofas sofas" "sillas sillas sillas";
+    column-gap: 40px;
+    row-gap: 20px;
+    padding: 3%;
+    height: 100%;
+    width: 100%;
+    
+
+} 
+
+a{
+    color:rgb(167, 145, 111);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+    
+}
+
+h2{
+    color:white;
+}
+
+#menu div{
+    background-color:#c7bba0;
+    margin: 10px;
+    padding: 10px;
+    height: 55px;
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.menuhamburguesa{
+    display: none;
+}
+
+
+
+
+
+}
+    
