@@ -129,21 +129,18 @@ grid-area: sillas;
 }
 
 
-.espejos,
-.escritorios,
-.sillas,
-.sofas,
-.mesas,
-.estanterias{
+img {
     
-        filter: grayscale(100%);
+        filter: grayscale(20%);
         transition: all 2s;
+}
+    img:hover{
         filter: grayscale(0);
         transform: scale(1.5);
         overflow: hidden;
     
-    
 }
+
 
 
 
@@ -189,6 +186,7 @@ grid-area: sillas;
         grid-template-areas: "estanterias" "escritorios" "mesas" "espejos" "sofas" "sillas";
         column-gap: 100px;
         row-gap: 10px;
+        
     
     
         
@@ -199,8 +197,10 @@ section{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin: 50%;
+    
 }
+
+
 
 
 
@@ -254,9 +254,8 @@ h2{
     grid-template-areas: "estanterias estanterias estanterias" "escritorios escritorios escritorios" "mesas mesas mesas" "espejos espejos espejos" "sofas sofas sofas" "sillas sillas sillas";
     column-gap: 40px;
     row-gap: 20px;
-    padding: 3%;
-    height: 100%;
-    width: 100%;
+    padding: 0%;
+   
     
 
 } 
@@ -278,7 +277,7 @@ a{
 }
 
 h2{
-    color:white;
+    color: rgb(167, 145, 111);
 }
 
 #menu div{
